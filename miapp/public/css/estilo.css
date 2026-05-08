@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    background: #fafafa;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagina {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 30px 18px;
+}
+
+.pagina-ancha {
+    max-width: 900px;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.caja,
+.bloque {
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #ddd;
+}
+
+.panel,
+form {
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+h2 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: #0645ad;
+}
+
+.subtitulo,
+.autor,
+.email,
+.comentario,
+.vacio {
+    color: #666;
+}
+
+.acciones {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.cabecera .acciones {
+    margin-top: 0;
+}
+
+.boton,
+button {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background: #fff;
+    color: #222;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover,
+button:hover {
+    background: #f0f0f0;
+}
+
+.volver {
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.listado,
+.valoraciones,
+.lista-simple {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.libro,
+.valoracion,
+.fila {
+    padding: 14px 0;
+    border-bottom: 1px solid #e2e2e2;
+    background: #fff;
+}
+
+.libro h2 {
+    margin: 0 0 6px;
+    font-size: 19px;
+}
+
+.libro h2 a,
+.nombre {
+    color: #222;
+    text-decoration: none;
+}
+
+.libro h2 a:hover,
+.nombre:hover {
+    text-decoration: underline;
+}
+
+.dato,
+.puntuacion {
+    margin: 6px 0;
+}
+
+.borrar {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.vacio,
+.mensaje,
+.errores {
+    padding: 12px 14px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.mensaje {
+    border: 1px solid #c8d8c8;
+    background: #f3faf3;
+}
+
+.errores {
+    border: 1px solid #e0b4b4;
+    background: #fff5f5;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+textarea {
+    min-height: 110px;
+}
+
+.campo {
+    margin-bottom: 16px;
+}
+
+.estrellas {
+    color: #d49a00;
+    letter-spacing: 1px;
+}
+
+.selector-estrellas {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+}
+
+.selector-estrellas input {
+    display: none;
+}
+
+.selector-estrellas label {
+    margin: 0;
+    color: #bbb;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.selector-estrellas input:checked ~ label,
+.selector-estrellas label:hover,
+.selector-estrellas label:hover ~ label {
+    color: #d49a00;
+}
+
+@media (max-width: 680px) {
+    .cabecera {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
