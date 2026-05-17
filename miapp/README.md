@@ -17,7 +17,17 @@ El proyecto incluye un Docker Compose sencillo con solo dos servicios:
 - `app`: Laravel con PHP 8.4 y Apache.
 - `mysql`: base de datos MySQL 8.4.
 
+## Requisitos
+
+- Docker Desktop iniciado.
+- Node.js `20.19` o superior dentro de la rama 20, o Node.js `22.12` o superior.
+- npm `10` o superior.
+
 ## Puesta en marcha
+
+Ejecuta los comandos desde la carpeta `miapp`.
+
+En Windows:
 
 ```bat
 copy .env.example .env
@@ -28,6 +38,14 @@ docker compose -f docker-compose.local.yml exec app php artisan db:seed
 docker compose -f docker-compose.local.yml exec app php artisan optimize:clear
 npm.cmd install
 npm.cmd run build
+```
+
+En macOS/Linux cambia `copy` y `npm.cmd` por:
+
+```sh
+cp .env.example .env
+npm install
+npm run build
 ```
 
 La aplicacion estara disponible en:
